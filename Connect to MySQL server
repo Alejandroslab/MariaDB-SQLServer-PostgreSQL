@@ -1,0 +1,34 @@
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+
+change bind-address
+from 127.0.0.1
+to 0.0.0.0
+
+Doing that it will be possible to accept connections from any device. 
+Save and close the config file
+
+Restart the service
+
+sudo systemctl restart mysql
+
+if you have firewall like ufw you have to create a rule for mysql and port 3306
+
+
+(In windows just lauch the installer and mysql will be installed as a service (you will have to provide user and password))
+
+
+
+
+Now install MySQL on the client machine. It will install Workbench.
+Create New Connection
+Provide IP address of Ubuntu Server and leave the default port open (3306) 
+or just change that if you have changed the default port
+
+Now just provide the credentials that you have created on ubuntu server for mysql
+Click connect
+
+Done!
+
+
+
+
