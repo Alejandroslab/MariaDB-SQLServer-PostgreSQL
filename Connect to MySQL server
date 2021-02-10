@@ -13,6 +13,10 @@ sudo systemctl restart mysql
 
 if you have firewall like ufw you have to create a rule for mysql and port 3306
 
+To check the status
+
+systemctl status mysql.service
+
 
 (In windows just lauch the installer and mysql will be installed as a service (you will have to provide user and password))
 
