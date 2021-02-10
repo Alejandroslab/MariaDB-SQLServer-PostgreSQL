@@ -1,0 +1,36 @@
+sudo apt-get install mysql-server
+
+After the installation you can check the status:
+
+ systemctl status mysql
+
+
+After running the process you have to create a new user
+
+sudo mysql
+
+ CREATE USER 'myuser'@'%' IDENTIFIED BY 'mypassword';
+ 
+ (remember that all the commands in mysql ends with ';' symbol)
+
+in this syntax you will see within marks the name of the user.
+The % indicates all the hosts could access wth those credentials (otherwise that woul de the IP address or the hostname)
+
+Now assign privileges:
+
+GRANT ALL PRIVILEGES ON *.* TO 'myuser  '@'%';
+
+
+
+
+--
+show all users:
+
+first, quit mysql. Then:
+sudo mysql -u root -p
+
+mysql> use mysql;
+
+Now this command will produce a table with the list of all the users:
+
+mysql> SELECT user FROM user;
