@@ -1,1 +1,6 @@
 sudo mysql
+
+
+to quit the session just type:
+
+quit
