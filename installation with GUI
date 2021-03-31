@@ -1,0 +1,8 @@
+after installation with the .exe you have to configure the mysql SERVER
+if the windows of configuration does not open automatically then
+the program will not work
+you have reopen the installer and click on configuer MySql Server
+
+
+set a password for ROOT
+this will create also a process in the Windows Services
