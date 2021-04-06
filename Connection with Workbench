@@ -1,0 +1,10 @@
+Create a new user on server and set a password
+
+Go to your client pc and open MySQL Workbench
+
+
+Create a new connection
+set the server ip and the port that usually is 3306.
+
+Then insert your user and password and click on connect
+done!
