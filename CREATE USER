@@ -4,3 +4,5 @@ CREATE USER 'myusername' IDENTIFIED BY 'mypassword';
 List all users:
 
 SELECT user FROM mysql.user;
+
+done
