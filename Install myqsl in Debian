@@ -1,0 +1,70 @@
+first
+sudo apt update
+
+then install gnupg:
+
+sudo apt install gnupg
+
+now download an image (.deb) of mysql fom the official website
+
+cd /tmp
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.16-1_all.deb
+
+(usually the version will change overtime e.g. the 0.8.16-1 will become 0.8.21-1 etc..)
+
+now install it with dpkg
+
+
+sudo dpkg -i mysql-apt-config*
+
+Now it will be opened a configuration screen (blue screen)
+(you will need a terminal with a screen with a sufficient size otherwise the installer will stop (this could happen
+when for example you are in platformio inside atom and the size of terminal is really small))
+
+now just click on ok leavign the 3 option with the default settings.
+
+launch:
+
+sudo apt update
+
+done!
+
+now let's install mysql
+
+sudo apt install mysql-server
+you will be asked to set a root password. set it (blue screen installation)
+Leave then: 'Use Strong Password Encryption' when asked
+
+DONE!
+you can check the status with:
+
+sudo systemctl status mysql
+
+__
+you can also run some checks for security settings with this command::
+
+mysql_secure_installation
+
+some options will prompt for an answer. you will have to just press 'y' to yes and any other letter for 'no'
+first question:
+validate password plugin = type enter to skip it
+ If enabled, you will also be prompted to choose a level from 0–2 for how strict the password validation will be
+
+ second question:
+ change root password: type enter to skip it as we have just created a new root
+  removing the anonymous MySQL user = y
+  disallowing remote root login = it depends but most of users: type y
+   removing the test database = y
+   reloading privilege tables to ensure the previous changes take effect properly = y (to apply your changes)
+
+   done with security settings.
+
+   you can test with 'mysqladmin' command that comes with the mysql installation:
+
+   mysqladmin -u root -p version
+
+   this command will specify the user (-u) that in this case is root, it will ask for a passsword (-p)
+   and will run a command that in this casee is 'version'
+therefore the mysql version will be displayed after typing the root Password
+
+done! your mysql is set up and ready to go!
