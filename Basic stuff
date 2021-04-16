@@ -20,3 +20,13 @@ CREATE TABLE mytable (
 use show tables to show the tables:
 
 SHOW TABLES
+
+to see the structure of a table you use the command DESCRIBE
+
+DESCRIBE mytable;
+you will get the names and characteristics of each field in
+the tables
+
+you can get the same with SHOW COLUMNS:
+
+SHOW COLUMNS FROM mytable;
