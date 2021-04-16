@@ -1,0 +1,22 @@
+in this not necessary to write commands in capital letters
+
+Before starting you need to SPEFICY WHICH DATABSE YOU WANT TO USE:
+with this command:
+
+USE mydatabase
+
+When you select a database to be used you will see
+that is empty if it hase been just created.
+therefore you need to create tables to populate it.
+
+you can create table:
+
+CREATE TABLE mytable (
+-> id PRIMARY KEY INT NOT NULL AUTO_INCREMENT
+-> name VARCHAR(5)
+-> mobile VARCHAR(20)
+-> );
+
+use show tables to show the tables:
+
+SHOW TABLES

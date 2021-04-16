@@ -1,1 +1,5 @@
 CREATE DATABASE mydatabase;
+
+to delete a database:
+
+DROP DATABASE mydatabase;

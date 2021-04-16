@@ -1,0 +1,5 @@
+SHOW DATABASES;
+
+the default databasese are mysql and test
+in mysql there are the users
+while 'test' is just a test database
