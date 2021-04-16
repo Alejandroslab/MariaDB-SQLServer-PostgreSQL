@@ -4,3 +4,19 @@ sudo mysql
 to quit the session just type:
 
 quit
+
+you can access also with:
+
+mysql -h hostname -u username -p
+
+or:
+
+mysql -u username -p
+if you are operating inside the sytem with mysql installed
+
+-p is an option that requires a password
+
+__
+access as administrator
+
+mysql -u root
