@@ -17,3 +17,12 @@ FROM Employees;
 WHERE City = 'London';
 
 count the number of employees resident in London
+
+you can also use DISTINCT nested.
+This allows you to count all the different values (it will not consider duplicates)
+
+SELECT COUNT (DISTINCT City)
+FROM Employees;
+WHERE Department = 'R&D';
+
+this will allow you to get from which cities all the employess of the R&D department

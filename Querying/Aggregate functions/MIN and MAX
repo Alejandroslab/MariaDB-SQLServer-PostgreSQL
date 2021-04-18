@@ -1,0 +1,13 @@
+SELECT MIN(Wage), Max(Wage)
+FROM Employees;
+
+this will retriev the minimum and te maximum
+
+if you use it with a char variable you will get the first and the last value of the
+attribute
+like:
+
+SELECT MIN(LAST_NAME), MAX (LAST_NAME)
+FROM Employees;
+
+as LAST_NAME is a character type 

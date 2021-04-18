@@ -1,0 +1,25 @@
+If you want to sort you use ORDER BY
+the direction is always ascendent and you have to specify DESC if you want the contrary
+
+ORDER BY should be put as last statement of the command:
+
+SELECT LAST_NAME, FIRST_NAME, City
+FROM Employees
+ORDER BY LAST_NAME, FIRST_NAME;
+
+You can nest it:
+
+SELECT LAST_NAME, Wage
+FROM Employees
+ORDER BY Wage DESC, LAST_NAME;
+
+this will allow to order in descending order by the wage level
+when the wage are the same it will order by LAST_NAME.
+
+you can also use the number for the field
+
+SELECT ProductName, UnitPrice, Quantity, UnitPrice*Quantity
+FROM Invoice
+ORDER BY 4 DESC;
+
+where 4 indicate the fourth field (the last one that is UnitPrice*Quantity)
