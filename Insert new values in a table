@@ -1,6 +1,6 @@
 INSERT INTO Employees
-(ID. Nome. Surname. Address. Wage. Department)
-VALUES(20. 'Mark'. 'Ross'. 'New York'. 100000. 'Accounting')
+(ID, Name, Surname, Address, Wage, Department)
+VALUES(20, 'Mark', 'Ross', 'New York', 100000, 'Accounting')
 
 to update a value such as the ID of a record just use:
 
