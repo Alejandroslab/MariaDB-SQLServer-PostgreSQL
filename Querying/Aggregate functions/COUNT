@@ -1,0 +1,19 @@
+Count
+
+SELECT COUNT (*)
+FROM Employees;
+
+it counts the row numbers selected by the query.
+when there is the * also the null fields are counted.
+
+SELECT COUNT (Department)
+FROM Employees;
+
+in this way you can count the number of employees assigned to a department
+
+
+SELECT COUNT (*)
+FROM Employees;
+WHERE City = 'London';
+
+count the number of employees resident in London

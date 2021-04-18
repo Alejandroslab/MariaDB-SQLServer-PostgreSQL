@@ -1,0 +1,12 @@
+SELECT SUM (Wage)
+FROM Employees
+WHERE Department = 'Marketing'
+
+this will retrieve the sum of all the wages of the marketing Department
+
+you can also perform some operations:
+
+if you want to get all the invoices (price* quantity)
+
+SELECT SUM (price * quantity) AS Total
+FROM Invoices;

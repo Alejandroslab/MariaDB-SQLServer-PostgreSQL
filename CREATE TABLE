@@ -1,6 +1,29 @@
+you can create table:
+
+CREATE TABLE mytable (
+-> id PRIMARY KEY INT NOT NULL AUTO_INCREMENT
+-> name VARCHAR(5)
+-> mobile VARCHAR(20)
+-> );
+
+
 CREATE TABLE Newtable
 (ID key primary key,
 Surname char(30) not null,
 Name char(20) not null,
 Address char(20 default)
 )
+
+the structure can then be modified with the command:
+ALTER TABLE Newtable
+
+with this you can ADD a new column and DROP another one
+
+ALTER TABLE Newtable
+ADD Birthday date;
+
+ALTER TABLE Newtable
+DROP Address;
+
+to delete a table
+DROP TABLE Newtable

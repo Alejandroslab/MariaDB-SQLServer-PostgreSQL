@@ -1,5 +1,12 @@
 
-
 SELECT ID AS IDNumber, Last Name, First Name, City
 FROM Employees
 WHERE Department = ' ';
+
+you will see an empty rseult because no row in Employees
+has some empty character inside the column Department
+
+the correct query is:
+SELECT ID AS IDNumber, Last Name, First Name, City
+FROM Employees
+WHERE Department IS NULL;

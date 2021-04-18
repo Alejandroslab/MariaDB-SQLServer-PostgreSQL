@@ -1,0 +1,25 @@
+Select Employees.*, Departments.*
+FROM Departments INNER JOIN Employees ON
+     Departments.Code = Employees.Department
+
+Structured query:
+
+SELECT LAST_NAME, FIRST_NAME, Description
+FROM Employees, Departments
+WHERE Department=Code AND City = 'London';
+
+Department=Code is necessary to specify the common attributes of the tables
+
+it is more clear if you specify all the name of the tables:
+
+SELECT Employees.LAST_NAME, Employees.FIRST_NAME, Departments.Description
+FROM Employees, Departments
+WHERE Employess.Department=Departmens.Code AND Departmens.City = 'London';
+
+
+you can add an alias in order to shorten the query like this:
+
+SELECT E.LAST_NAME, E.FIRST_NAME, D.Description
+FROM Employees AS I INNER JOIN Departments AS D ON
+E.Department = D.Code
+WHERE D.City =  'London';

@@ -19,3 +19,6 @@ REAL
 
 where p indicate the maximum number of figures that can be contained
 CHARACTER could be abbreviated with CHAR
+
+An attribute is a column.
+a record is a row containing data.
