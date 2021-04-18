@@ -1,0 +1,25 @@
+INSERT INTO Employees
+(ID. Nome. Surname. Address. Wage. Department)
+VALUES(20. 'Mark'. 'Ross'. 'New York'. 100000. 'Accounting')
+
+to update a value such as the ID of a record just use:
+
+UPDATE Employees
+SET Department = 'Back Office'
+WHERE ID = 20;
+
+to delete the data of a record with ID 20
+
+DELETE FROM Employees
+WHERE ID = 20;
+
+let's increase the wage of all the employees of the Back Office department:
+
+UPDATE Employees
+SET Wage = Wage * 1.05
+WHERE Department = 'Back Office';
+
+to delete the records of the R&D employees:
+
+DELETE FROM Employees
+WHERE Department = 'R&S'
