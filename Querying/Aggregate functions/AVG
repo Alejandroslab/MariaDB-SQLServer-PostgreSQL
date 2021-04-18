@@ -1,0 +1,6 @@
+SELECT AVG(Wage)
+FROM Employees.Department
+WHERE Department = Code AND
+City = 'London';
+
+this will get the average of the wages of london
