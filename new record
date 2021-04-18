@@ -1,0 +1,8 @@
+INSERT INTO mytable (name, mobile)
+-> VALUES ('Mike', '12345');
+
+You will not specify the id field as this is automatically incremented
+
+to see this just:
+
+SELECT * FROM mytable;
