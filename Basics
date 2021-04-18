@@ -1,0 +1,21 @@
+Structured Query Language
+It allows to define the structure of the database's relations e to control the access to the
+database
+edit the data contained in the databse, with insert, edit and delete
+query the database
+
+The table and the attributes of the table are called identifiers
+
+The type of data could be:
+BOOLEAN
+CHARACTER(n)
+DATE
+TIME
+INTEGER(p)
+SMALLINT
+INTEGER
+DECIMAL(p,s)
+REAL
+
+where p indicate the maximum number of figures that can be contained
+CHARACTER could be abbreviated with CHAR

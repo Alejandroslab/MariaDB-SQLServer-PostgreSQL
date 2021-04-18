@@ -1,0 +1,6 @@
+CREATE TABLE Newtable
+(ID key primary key,
+Surname char(30) not null,
+Name char(20) not null,
+Address char(20 default)
+)
