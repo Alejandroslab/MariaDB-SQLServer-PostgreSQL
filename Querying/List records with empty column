@@ -1,0 +1,5 @@
+
+
+SELECT ID AS IDNumber, Last Name, First Name, City
+FROM Employees
+WHERE Department = ' ';
