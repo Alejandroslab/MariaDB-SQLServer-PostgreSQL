@@ -1,0 +1,3 @@
+SELECT Last Name, First Name, City
+FROM Employees
+WHERE Wage >= [Minimum annual wage?];

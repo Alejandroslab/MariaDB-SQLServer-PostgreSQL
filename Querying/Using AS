@@ -1,0 +1,16 @@
+If you want to rename a column when querying use AS
+SELECT ID AS IDNumber, First Name, Last Name
+FROM Employees;
+
+If you want to add a sort of temporary column in which you process some info use
+also AS
+
+SELECT LAST_NAME, FIRST_NAME, Wage AS CurrentWage, Wage*1.05 AS NewWage
+FROM Employees;
+
+
+you can use also:
+
+SELECT Last Name, First Name, City
+FROM Employees
+WHERE Wage >= 55000
