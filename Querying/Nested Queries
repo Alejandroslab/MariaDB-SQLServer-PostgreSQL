@@ -1,0 +1,25 @@
+You can use SELECT instead of a WHERE clause
+
+SELECT Last_Name, First_Name
+FROM Employees
+WHERE ID =
+(
+  SELECT Manager
+  FROM Department
+  WHERE Code =
+  (
+    SELECT Department
+    FROM Employees
+    WHERE Last_Name = 'Ross' AND First_Name = 'Mark'
+  )
+);
+
+this will retrieve the name of the manager of Mark Ross employee
+
+Another example:
+SELECT Last_Name, First_Name
+FROM Employees
+WHERE Wage < (SELECT AVG(Wage) FROM Employees);
+
+in this case you have to use nested queires as the aggregate functions
+could appear in the clause SELECT and HAVING but not in the WHERE clause
