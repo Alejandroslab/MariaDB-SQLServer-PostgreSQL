@@ -1,0 +1,18 @@
+You can also use 'HAVING' with group by
+
+SELECT Department, COUNT (ID), SUM(Wage),
+FROM Employees
+GROUP BY Department
+HAVING COUNT(ID)>2;
+
+if the select query has the where clause, the values will be grouped after operating
+the selection of the rows that respects the written conditions near 'where'
+
+having has similar characteristics than 'where' but it
+acts in a different way: with 'where' some conditions vinculate on
+the tbale rows, with 'having' the control of the condition is made on the result
+of the aggregate functions applied to group of rows
+
+to sum up:
+'HAVING' gets some conditions on the groups
+'WHERE' get conditions on single rows.
