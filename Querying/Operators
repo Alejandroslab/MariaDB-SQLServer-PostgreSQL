@@ -1,0 +1,35 @@
+BETWEEN
+it controls if a values is included in a specific interval (including the extremes)
+
+WHERE Wage BETWEEN 30000 AND 34000
+
+this is better than writing
+Wage>= 30000 AND Wage<=45000
+
+IN
+it controls if a value belongs to one of the values of a list specified after the word 'in'
+
+WHERE City IN ('London', 'Manchester', 'Oxford')
+
+which is better than typing:
+City = 'London' OR City = 'Manchester' OR City = 'Oxford'
+
+LIKE
+it allows to use some sort of wildcards:
+
+LIKE 'ab%' allows to find all strings that starts with the characters 'ab..'
+LIKE '%ab%' allows to find all strings that contain 'ab'
+
+SELECT Last_Name, Department
+FROM Employees
+WHERE Last_Name LIKE 'R%'
+
+this means select the last name and the department from the table Employees where the
+last name starts with 'R..''
+
+if you need to find the character '_'  you have to use 'ESCAPE'
+
+LIKE '%$_%' ESCAPE '$'
+the character $ is the escape character, therefore the sequence '$_'
+says that the character _ (underline) is the character to find in
+the string and not a jolly character
