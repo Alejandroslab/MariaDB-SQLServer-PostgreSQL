@@ -1,0 +1,8 @@
+
+
+SELECT Last_Name, First_Name, Description,
+Wage - (SELECT AVG(Wage) FROM Employees)
+FROM Employees, Departments
+WHERE Department = Code AND
+Wage > (SELECT AVG (Wage)
+        FROM Employees);
