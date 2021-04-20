@@ -1,6 +1,10 @@
 CREATE VIEW Managers AS
 SELECT ID, First_Name, Last_Name, Department
 FROM Employees
-WHERE ID IN (10,12,13,14)
+WHERE ID IN (10,12,13,14);
 
 where the ID are the managers' identifiers
+
+A view can also be deleted with:
+
+DROP VIEW Managers;
