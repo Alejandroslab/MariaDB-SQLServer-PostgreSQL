@@ -1,0 +1,12 @@
+
+Employees INTERSECT NewEmployees;
+
+NewEmployees EXCEPT Employees
+
+
+INTERSECT could also be represented by:
+
+SELECT *
+FROM Employees
+WHERE ID IN (SELECT ID
+            FROM NewEmployees);

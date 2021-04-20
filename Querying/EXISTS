@@ -1,0 +1,12 @@
+it is used in a WHERE clause
+it controls if there are rows from the subquery
+
+
+SELECT Last_Name, First_Name, Wage - (SELECT AVG(Wage)
+                                      FROM Employees
+                                      WHERE Department = 'Marketing')
+
+FROM Employees
+WHERE EXISTS (SELECT *
+            FROM Employees
+            WHERE Department = 'Marketing');
