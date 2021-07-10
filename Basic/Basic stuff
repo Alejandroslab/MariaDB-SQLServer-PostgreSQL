@@ -1,4 +1,8 @@
 FIRST: It is not necessary to write commands in capital letters
+(but you must use them when using the datbases or tables as sql is case sensitive)
+Remember also to end every command with the symbol ';'
+
+
 
 SQL works with databases and tables.
 Databases contain tables.
