@@ -1,0 +1,20 @@
+Troubleshooting loading a csv:
+
+The programm will automatically detect the correct delimiter therefore there is no need to adjust the delimiter
+
+when you import the data you can have the preview of the table and if you click
+on the configuration icon you can also set your delimiter
+
+
+
+Now sometimes problems can arise with the primary key
+
+the primary key usually the 'ID' must have the 'AI' option flagged!
+
+the AI option stands for 'Auto Increment'. THis means that the primary key will automatically Increment
+at each new record
+
+you should also check the length of the eventual VARCHAR()
+
+set it as 'VARCHAR(255)'
+where 255 stands for the characters length

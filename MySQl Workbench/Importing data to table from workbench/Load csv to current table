@@ -1,0 +1,36 @@
+First you have to set a 'Default Schema' that is a default database
+
+then you have to open a new Query File and select your table
+
+
+select * from PTITA;
+
+In Workbench you don't have also to remember to put the symbol ';'
+as the command will work anyways
+
+you can run your code simply pressing 'ctrl + enter'
+
+you will see now your table
+
+
+Remember that you must always create a table before importing it
+and it must have the same size in terms of columns
+
+Anyways the csv file could also not have the 'ID' column
+as this will be created automatically by Workbench
+
+
+Click on 'Import records from an external file'
+
+then browse to your csv file
+click on Next
+then select 'Use existing table' and leave it the name like 'Database.Table'
+click on Next
+
+now check the columns of your csv that should correspond to the ones of your table
+done!
+
+click on next and wait your table to populate
+
+now if you click on the symbol of 'Refresh'
+you will see your table
