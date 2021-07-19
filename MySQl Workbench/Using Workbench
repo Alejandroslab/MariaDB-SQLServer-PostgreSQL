@@ -1,0 +1,9 @@
+After having successfully connected to your server
+to run any query you must indicate the default 'Schema' that basically corresponds to the default database
+
+in order to do that go to the 'Navigator' panel
+then select on the bottom the tab 'Schemas'
+
+you will see the list of all your databases in your server
+
+click rigtht on the one that you watn to use and select 'Set as default schema'
