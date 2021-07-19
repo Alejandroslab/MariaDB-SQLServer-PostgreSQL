@@ -10,6 +10,8 @@ that is empty if it hase been just created.
 therefore you need to create tables to populate it.
 
 
+REMEMBER: you cannot "undo" the USE command. this means that you have to quit mysql in order to use another database
+
 
 use show tables to show the tables:
 

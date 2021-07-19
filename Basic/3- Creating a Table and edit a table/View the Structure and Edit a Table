@@ -1,0 +1,19 @@
+You can view the strcture using
+
+DESCRIBRE mytable;
+
+
+
+the structure can then be modified with the command:
+ALTER TABLE Newtable
+
+with this you can ADD a new column and DROP another one
+
+ALTER TABLE Newtable
+ADD Birthday date;
+
+ALTER TABLE Newtable
+DROP Address;
+
+to delete a table
+DROP TABLE Newtable

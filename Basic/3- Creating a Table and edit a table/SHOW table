@@ -1,0 +1,3 @@
+Show mytable in mydatabase;
+
+it will show the table mytable in the database called 'mydatabase'

@@ -1,0 +1,16 @@
+After launching
+
+USE mydatabase;
+
+then you can list your tables;
+
+SHOW tables;
+
+and then if you have e.g. the table called 'mytable'
+you can use
+
+SELECT * from mytable;
+
+If your table is empty you will get the message:
+
+'Empty set (0.00 sec)'
