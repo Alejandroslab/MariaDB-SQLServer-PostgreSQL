@@ -4,3 +4,5 @@ Problem: it seems that it cannot import a csv easily you have to set up some con
 works without problems
 
 Something that works better: renaming databases is easier in Heidi rather than in Workbench
+even this is not so much convenient due to problems that can arise when renaming a databases
+therefoe be careful when renaming
