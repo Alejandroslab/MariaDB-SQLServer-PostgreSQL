@@ -1,0 +1,13 @@
+In Workbench you can also import a csv to a table that you will create on the fly
+in the Navigator Panel under the Schemas tab:
+Just right click on your Tables tab and select 'Table Data Import Wizard'
+follow the instructions, select your csv and then click on import!
+
+done!
+
+remember that you should create your primary key afterwards as in the wizard it seems not possibile to create
+the primary key
+
+to do that right click on your table in the Navigator Panel under the Schemas tab and select
+'Alter Table'
+with alter table you will be able to edit the structure

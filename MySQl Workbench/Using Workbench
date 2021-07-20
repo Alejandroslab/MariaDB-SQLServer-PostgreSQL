@@ -1,9 +1,10 @@
 After having successfully connected to your server
 to run any query you must indicate the default 'Schema' that basically corresponds to the default database
+but more in general to all the collection of database objects (like views, triggers, stored procedures, etc)
 
 in order to do that go to the 'Navigator' panel
 then select on the bottom the tab 'Schemas'
 
 you will see the list of all your databases in your server
 
-click right on the one that you watn to use and select 'Set as default schema'
+click right on the one that you want to use and select 'Set as default schema'
