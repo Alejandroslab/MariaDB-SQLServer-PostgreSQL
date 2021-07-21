@@ -6,3 +6,5 @@ works without problems
 Something that works better: renaming databases is easier in Heidi rather than in Workbench
 even this is not so much convenient due to problems that can arise when renaming a databases
 therefoe be careful when renaming
+
+In HeidiSQL you can also delete rows easily while in Workbench this is more restricted

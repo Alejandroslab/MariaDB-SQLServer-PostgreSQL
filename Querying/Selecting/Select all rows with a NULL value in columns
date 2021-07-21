@@ -1,0 +1,5 @@
+just use
+
+SELECT * FROM mydatabase where mycolumn IS NULL;
+
+you just have to use the 'IS NULL' statement
