@@ -1,0 +1,11 @@
+You have to alter your table if you want to add a primary key like 'id' etc
+
+you have to set it as PRIMARY, NOT NULL and with AUTO INCREMENT
+
+then, if you want to change the order of the columns you have to do it also with ALTER TABLE
+
+REMEMBER!
+after you create a primary key and the set it as not a primary key
+
+if you want the same column the be again your primary key it would be necessary to delete the column and
+recreate it. (it gave me a strange error in workbench..)
