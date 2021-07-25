@@ -1,0 +1,3 @@
+to delete a user just use 'drop' after logging as root
+
+DROP USER 'test'@'localhost';

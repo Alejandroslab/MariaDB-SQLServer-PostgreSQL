@@ -1,0 +1,35 @@
+CREATE USER 'test'@'localhost' IDENTIFIED BY 'newpassword';
+
+Next, you need to flush the privileges, which reloads the user table in MySQL. You must perform this step each time you add or edit a user.
+
+The following example shows the command that you use to flush privileges:
+
+FLUSH PRIVILEGES;
+
+
+At this stage, your new user (test) has no permissions set and can’t do anything.
+You might want to start setting permissions by assigning SELECT (read-only) permissions
+on all of the available databases.
+You can grant select permissions by running the following command:
+
+GRANT SELECT ON * . * TO 'test'@'localhost';
+
+
+if you want just to grant privilges to some databases:
+
+GRANT ALL PRIVILEGES ON `mytestdb` . * TO 'test'@'localhost';
+
+FLUSH PRIVILEGES;
+
+to check that the user 'test' has only read-only privileges
+
+log in as the user 'test' and try to create a database
+
+mysql -u test -p
+
+
+CREATE DATABASE mytestdb2;
+
+you will get this error:
+
+ERROR 1044 (42000): Access denied for user 'test'@'localhost' to database 'mytestdb2'

@@ -1,0 +1,16 @@
+To login you can use:
+
+mysql -u test -p
+
+where -u stands for user and -p stands for password
+
+in this case 'test' is the name of the user
+
+
+you can also login as root with:
+
+mysql -u root -p
+
+or (in Debian)
+
+sudo mysql
