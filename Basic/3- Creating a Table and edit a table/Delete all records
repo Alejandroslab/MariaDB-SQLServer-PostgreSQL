@@ -1,0 +1,14 @@
+DELETE FROM mytable;
+
+will delete any records in your table
+
+or you can use something:
+
+DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+
+or
+
+DELETE FROM Customers WHERE ID IS NULL;
+
+this will delete all the records inside the table 'Customers' where the ID is null that means
+that ID is not definied, the cell is empty. 
