@@ -10,3 +10,12 @@ the correct query is:
 SELECT ID AS IDNumber, Last Name, First Name, City
 FROM Employees
 WHERE Department IS NULL;
+
+
+when your table has spaces in its name you have to plug the ticks
+
+like this:
+
+select id from `Clients 25.07.21`;
+
+the ticks go from left to right remember!
