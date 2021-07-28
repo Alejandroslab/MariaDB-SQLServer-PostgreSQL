@@ -1,0 +1,13 @@
+Microsft products like PowerBI, Excel, etc when talking about 'SQL Server' connection
+refer to the Microsoft SQL Server that is a product by Microsoft
+
+This kind of product can be installed only on Ubuntu
+
+
+To connect to the MySQL Server (the MySQL one and not
+the microsoft branded sql software)
+you have to use PowerBI and select 'MySQL Connection'
+in Excel you cannot connect to a MySQL server
+
+
+It's a bit confusing..
