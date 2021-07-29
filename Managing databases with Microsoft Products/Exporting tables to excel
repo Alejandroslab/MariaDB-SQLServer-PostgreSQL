@@ -1,0 +1,4 @@
+With MySQL the faster procedure is to connect with PowerBI and from there export the table imported like
+a csv.
+
+THen the csv can be imported in Excel
