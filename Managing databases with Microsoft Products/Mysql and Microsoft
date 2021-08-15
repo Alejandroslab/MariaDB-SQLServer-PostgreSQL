@@ -7,7 +7,7 @@ This kind of product can be installed only on Ubuntu
 To connect to the MySQL Server (the MySQL one and not
 the microsoft branded sql software)
 you have to use PowerBI and select 'MySQL Connection'
-in Excel you cannot connect to a MySQL server
+in Excel you cannot connect to a MySQL server unless if you previously don't set up and ODBC connection
 
 
 It's a bit confusing..

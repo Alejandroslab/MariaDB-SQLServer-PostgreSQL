@@ -1,0 +1,63 @@
+MySQL is not supported in Excel by default
+
+In order to use it you have to previously setup an ODBC connection
+
+First download and install MySQL installer in your machine
+
+Rememeber to select 'Connector ODBC 8.0'
+
+(REMEMBER: as of August 2021 Importing in Excel with the Connector ODBC version 8.0.2.6 gets DataSource.Error: ODBC: ERROR [42000]
+the solution is to downgrade to the version 8.0.2.5)
+
+Select the x64 Version as your Excel will be probably a 64 bit version
+(to check it open Excel File->Account->About Excel)
+
+Remember to install the 8.0 version and not the 5.3 (legacy version)
+
+Install it.
+
+Now in Windows we have to setup the ODBC connection
+
+In start type 'ODBC Data Sources'. Select the 64 bit version as you have installed the 64 bit mysql connector
+
+Now click on 'System DSN' tab to create a connection that is valid for all users.
+
+Click on 'Add' then select 'MySQL ODBC 8.0 Unicode Driver'
+(If you do not find it you have opened the ODBC Data Sources 32bit. Open the 64 bit version.)
+
+Click on 'Finish'
+
+Now the MySQL Connector will open.
+
+In 'Data Source Name' type the label of the Connection
+
+You can leave 'Description' empty
+In 'TCP/IP Server' you have to type in the hostname of your mysql server
+Leave the default port that for mysql is always 3306
+
+Now type the User and Password of your mysql server
+You do not have to select a Database (you can leave it empty)
+The last thing to do is click on details and check 'Allow big result sets'
+
+You can click on 'Test'. If appears 'Connection Successful' all done. It works
+
+Click Ok! DONE
+
+Now click ok on 'ODBC Data Sources'
+
+Now open Excel
+
+Go to Data tab
+
+'Get Data'->'From Other Sources'->'From ODBC'
+Select now from the drop down menu the DSN that you have just created
+
+Click OK
+
+You will see the list of all your databases
+You can browse your databases and select your tables
+
+If you click on load excel will open the table in a new sheet
+
+DONE!
+you have successfully created the connection to you MySQL server
