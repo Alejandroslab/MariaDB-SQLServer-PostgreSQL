@@ -1,0 +1,15 @@
+Logging to your SQL Server instance is easily
+You can log with Windows Authentication or SQL Server Authentication
+
+The first one allows to login with the LOCAL windows Account
+this means that all the local windows account can connect with their credentials
+
+Local means only on the same machine in which you have installed SQL server
+
+if you want to connect remotely you cannot use Windows Authentication
+as if you try you will get Error 18456 'login failed'
+
+In this case you have to use SQL Server Authentication
+
+
+To use the latter you should create a user first

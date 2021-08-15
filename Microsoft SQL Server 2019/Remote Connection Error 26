@@ -1,0 +1,51 @@
+In my case I have installed SQL Server on a Windows Server 2019 Machine
+
+Therefore I want to connect to that machine from another one
+
+If you try to connect without setting up you may incur in Error 26
+
+To fix this:
+
+To do that you have to configure the Windows Server 2019 Firewall
+because otherwise you will not be able to connect successfully
+
+Plus you may want to set a static IP for your client machine
+as you will have to indicate the IP's allowed.
+
+
+To configure the Firewall you will need to setup a new rule
+
+go to:
+
+Windows Administrative Tools then choose Windows Firewall with Advanced Security
+
+Under Windows Firewall with Advanced Security on Local Computer column, click on the Inbound Rule and then select New Rule from the right Panel
+
+From New Inbound Rule Wizard window, select Custom and then click on the Next button
+
+Under Does this rule apply to all programs or a specific program? select All programs then click on Next button
+
+Form Protocol type list, select Any and then click on Next button
+
+Under Which remote OP addresses does this rule apply to? select These IP addresses and then click on Add button
+
+In IP Address dialog box, under This IP address or subnet type the IP address and then click on Ok button
+
+Under What action should be taken when a connection matches the specified conditions? select Allow the connection and then click on Next button
+
+Click on the Next button to complete the New Outbound Rule Wizard steps
+
+DONE!
+
+Another thing to check to fix error 26:
+
+open SQL Server Management Studio, Right click on the database and select properties
+On Security page, select SQL Server and Windows Authentication mode and click on Ok button
+Restart SQL Server
+
+
+
+If you are still facing the SQL Server Error 26,
+then there could be a same name conflict between two systems.
+Check whether the computer name, system name is same if yes,
+then try to system using its IP address.

@@ -23,7 +23,7 @@ is the name of you SQL Server
 Afterwards the wizard will install Java as it is required to run SQL Server
 
 In Database Engine Configuration, you can change the authentication mode to Mixed. This will allow you to log into the server
-using either Windows authentication or a SQL Server sa (standard account) and a password which you choose
+using either Windows authentication or a SQL Server 'sa' (standard account) and a password which you choose
 
 Anyways you can change it later
 Then install R and Python as they can be useful

@@ -1,0 +1,16 @@
+In the SQL Server Management Studio, open Object Explorer.
+Click Myservername > Security > Logins.
+Right-click Logins and select New Login.
+On the General page, in the Login name field,
+type the name for a new user.
+Select SQL Server authentication
+In the Password field, type a password for the user
+In the Confirm Password field, retype the password
+that you entered in the Password field
+Depending on the role and permissions
+that you want to assign to this user,
+complete one of the following tasks:
+
+   On the Server Roles page, assign the sysadmin role to the new login ID.
+
+   If you do not want to assign the sysadmin role to the user, grant minimum permissions to the user by completing the steps that are mentioned in Granting minimum permissions for data collection.

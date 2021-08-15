@@ -1,0 +1,15 @@
+TO restart a sql server just open 'Sql Server Configuration Manager'
+
+Go to SQL Server Services
+
+Select your SQL Server Instance
+click right then 'Restart'
+
+wait for it..
+DONE!
+
+Remember that you can have multiple instances (if you have run multiple times the
+installation program)
+
+REMEMBER that you just need to restart 'SQL Server(Myserver)'
+and not the others like SQL Agent Service and Browser Service

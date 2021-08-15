@@ -1,0 +1,14 @@
+If you have managed to solve the Error 26
+now you may incur in the Error 28 - Server doesn't support requested protocol
+
+This error exist because SQL Server has network protocols disabled by Default
+
+To enable them open 'Sql server Configuration Manager'
+select SQL Server Network Configuration and then
+and turn on "Named Pipes" and "TCP/IP"
+
+ After that, you need to restart the SQL Server Browser and SQL Server(instance) services.
+
+ DONE!
+
+ Now you can connect from your client machine

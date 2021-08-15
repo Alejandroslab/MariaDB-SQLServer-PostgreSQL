@@ -15,3 +15,8 @@ if you don't remember it just go with Windows Authentication
 that means that you will connect with your Windows credentials
 
 Click on connect and done!
+
+Now you are ready to write you sql scripts.
+
+Remmeber that you can manage you SQL Server
+event with HeidiSQL
