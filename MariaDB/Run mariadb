@@ -1,0 +1,15 @@
+You can run mariadb with the same command that you use for mysql that is:
+
+sudo mysql
+
+the difference is that when you type in your password you will get the welcome message
+that is different
+
+you will get:
+
+'Welcome to the MariaDB monitor'....
+in case of a MariaDB instance otherwise you will get:
+
+'Welcome to the MySQL monitor' in case of a mysql installation
+
+the syntax is anyways almost identical 
