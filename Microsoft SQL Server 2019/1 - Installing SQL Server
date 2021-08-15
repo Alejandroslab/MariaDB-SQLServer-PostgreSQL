@@ -1,0 +1,39 @@
+After dowloading the developer edtion
+Install the exe
+
+then run the application 'SQL Server Installation Center'
+This application allows to install the SQL Server Instance
+in your current machine.
+
+You can also install SQL Server in a Windows Server Machine
+
+
+Select 'New SQL Server stand-alone installation...'
+
+Just click Next
+after the installation completes. You will see
+a Warning next to 'Windows Firewall' row
+but don't worry.
+
+Next you will see the 'Instance Configuration' window
+
+There you can set the 'Named Instance' that basically
+is the name of you SQL Server
+
+Afterwards the wizard will install Java as it is required to run SQL Server
+
+In Database Engine Configuration, you can change the authentication mode to Mixed. This will allow you to log into the server
+using either Windows authentication or a SQL Server sa (standard account) and a password which you choose
+
+Anyways you can change it later
+Then install R and Python as they can be useful
+
+Now click on close!
+You are DONE
+
+REMEMBER! You can rerun the application 'SQL Server Installation Center'
+and if you redo all the steps you will create another Instance
+that is another server.
+You will have therefore 2 sql server runnning
+
+You can check this running: 'SQL Server Configuration Manager'

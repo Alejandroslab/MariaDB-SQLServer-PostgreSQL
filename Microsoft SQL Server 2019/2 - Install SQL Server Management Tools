@@ -1,0 +1,17 @@
+In the machine in which you have installed your SQL Server Instance
+You can download also the GUI that will allow you to interact with it
+
+This is called 'Microsoft SQL Server Management Studio ' (abbreviated as SSMS)
+
+Just download it for free from Microsoft official website, install it
+and restart your system
+
+Once you open it you can choose 'Windows Authentication' or 'SQL Server Authentication'
+with the 'SQL Server Authentication' you have to remember the password
+that you have set up for the 'sa' user (aka standard user)
+during the installation of the SQL Server
+
+if you don't remember it just go with Windows Authentication
+that means that you will connect with your Windows credentials
+
+Click on connect and done!
