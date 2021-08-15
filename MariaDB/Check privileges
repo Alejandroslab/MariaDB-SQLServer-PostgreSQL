@@ -1,0 +1,13 @@
+To check privileges just use:
+
+
+SHOW GRANTS;
+
+to get the list of all PRIVILEGES
+
+
+otherwise:
+
+SHOW GRANTS FOR 'myusername';
+
+to check the grants for the user myusername
