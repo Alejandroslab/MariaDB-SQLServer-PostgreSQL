@@ -23,3 +23,5 @@ And use the password you just created
 You can do most of the MySQL configuration in the command line, but it’s not always easy if you don’t know the MySQL language
 So, I’ll show you here two ways to configure your server
 /etc/mysql
+
+GRANT ALL PRIVILEGES ON *.* TO 'dr.robotnik'@'localhost';
