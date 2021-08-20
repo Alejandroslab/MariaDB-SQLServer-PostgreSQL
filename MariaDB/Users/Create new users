@@ -9,9 +9,13 @@ Here is how to do this
 
     In this step and the following, replace all variables between <…> by the name you want to use
     Now, create the new user:
+
     CREATE USER '<username>'@'localhost' IDENTIFIED BY '<password>';
+
     Then, allow this new user to do anything on the database we just created:
+
     GRANT ALL PRIVILEGES ON <dbname>.* TO '<username>'@'localhost';
+
     Finally, reload the permissions with:
     FLUSH PRIVILEGES;
 
@@ -24,4 +28,23 @@ You can do most of the MySQL configuration in the command line, but it’s not a
 So, I’ll show you here two ways to configure your server
 /etc/mysql
 
-GRANT ALL PRIVILEGES ON *.* TO 'dr.robotnik'@'localhost';
+
+NOW REMEMEBER THAT IF YOU WANT TO HAVE ACCESS FROM OUTSIDE YOUR SERVER YOU NEED TO CHANGE the 'localhost' part to the '%' part:
+
+
+ CREATE USER 'myuser'@'%' IDENTIFIED BY 'mypassword';
+
+
+ remember to use always the '' symbols
+
+The % indicates all the hosts could access with those credentials (otherwise that would be the IP address or the hostname)
+If you type in just 'localhost' you will only be able to connect from your server
+
+Now assign privileges:
+
+GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%';
+
+REMEMBERA ALSO TO FLUSH:
+
+FLUSH PRIVILEGES;
+you may finally need to restart the mysql/mariadb service on your server

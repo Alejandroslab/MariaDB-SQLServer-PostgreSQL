@@ -10,17 +10,19 @@ After running the process you have to create a new user
 sudo mysql
 
  CREATE USER 'myuser'@'%' IDENTIFIED BY 'mypassword';
- 
+
  (remember that all the commands in mysql ends with ';' symbol)
+
+ remember also to use always the '' symbols
 
 in this syntax you will see within marks the name of the user.
 The % indicates all the hosts could access wth those credentials (otherwise that woul de the IP address or the hostname)
 
 Now assign privileges:
 
-GRANT ALL PRIVILEGES ON *.* TO 'myuser  '@'%';
+GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%';
 
-
+FLUSH PRIVILEGES;
 
 
 --

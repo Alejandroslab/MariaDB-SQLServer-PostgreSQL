@@ -1,0 +1,10 @@
+With MariaDB we have 2 instances running on our server:
+
+1) the sql one
+2) the maria db one
+
+to restart them just use:
+
+sudo service mysql restart
+or
+sudo service mariadb restart
