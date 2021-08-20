@@ -25,8 +25,11 @@ sudo mysql -u<username> -p
 And use the password you just created
 
 You can do most of the MySQL configuration in the command line, but it’s not always easy if you don’t know the MySQL language
-So, I’ll show you here two ways to configure your server
+to configure your mariadb go to and change this file:
 /etc/mysql
+
+anyways you may not need to configure it as when installed this as some default configurations that will work
+most of the time in the best way you may need to 
 
 
 NOW REMEMEBER THAT IF YOU WANT TO HAVE ACCESS FROM OUTSIDE YOUR SERVER YOU NEED TO CHANGE the 'localhost' part to the '%' part:
