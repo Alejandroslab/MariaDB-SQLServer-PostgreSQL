@@ -8,6 +8,10 @@ to get the list of all PRIVILEGES
 
 otherwise:
 
-SHOW GRANTS FOR 'myusername';
+SHOW GRANTS FOR 'myusername'@localhost;
 
 to check the grants for the user myusername
+
+remember if you check
+SHOW GRANTS FOR 'myusername';
+then you will get nothing as you are not specifying the host in which looking for that username
