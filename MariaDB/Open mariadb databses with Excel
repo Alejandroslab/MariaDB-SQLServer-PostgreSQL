@@ -1,0 +1,21 @@
+The procedure is similar to the mysql one
+
+Basically you have to download the MariaDB connector driver
+Then add a DSN with ODBC Source that you find in WINDOWS (you can add a system one if you need that the
+access will be available to every user)
+Click on add
+select MariaDB ODBC driver
+Type a name for the connection
+
+Specify the server name and the port (3306)
+then the username and the password
+
+
+Once you have done click on next, next and then finish
+
+Now you can open Excel
+Data>Get Data>From Other Sources>From ODBC
+
+Now select your last saved server
+and click connect!
+DONE
