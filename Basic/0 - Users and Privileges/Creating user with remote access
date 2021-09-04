@@ -4,6 +4,18 @@ Then you have to set it up with the '%' symbol when you create it
 
 CREATE USER 'test'@'%' IDENTIFIED BY 'newpassword';
 
+IN THIS PARTCULAR CASE YOU CAN ALSO OMIT THE '%' SYMBOL AND YOU WILL GET THE SAME RESULT 
+(you can check it listing the users with:
+
+SELECT User, Host FROM mysql.user;
+)
+
+therefore you can type:
+
+CREATE USER 'test' IDENTIFIED BY 'newpassword';
+
+
+
 Next, you need to flush the privileges, which reloads the user table in MySQL. You must perform this step each time you add or edit a user.
 
 The following example shows the command that you use to flush privileges:
