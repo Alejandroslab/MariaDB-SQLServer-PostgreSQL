@@ -1,1 +1,6 @@
-SELECT User, Host, Password FROM mysql.user;
+SELECT User FROM mysql.user;
+
+
+if you want also to check the Host that has been specified while creating the user
+
+SELECT User, Host FROM mysql.user;
