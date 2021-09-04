@@ -1,0 +1,4 @@
+If you want to create a user that can be used from a remote machine (that is not 'localhost')
+
+Then you have to set it up with the '%' symbol when you create it 
+
