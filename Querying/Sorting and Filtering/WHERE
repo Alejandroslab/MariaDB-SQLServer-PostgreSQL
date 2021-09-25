@@ -1,0 +1,2 @@
+SELECT last_name, school, FROM teachers
+WHERE school = 'New York School';

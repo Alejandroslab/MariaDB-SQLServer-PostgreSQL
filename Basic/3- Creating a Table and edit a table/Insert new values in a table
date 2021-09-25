@@ -23,3 +23,7 @@ to delete the records of the R&D employees:
 
 DELETE FROM Employees
 WHERE Department = 'R&S'
+
+REMEMBER that text and dates require quotes!
+
+the default date format is: YYYY-MM-DD

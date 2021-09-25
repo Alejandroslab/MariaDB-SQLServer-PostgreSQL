@@ -12,6 +12,6 @@ the difference stands in the little inclination towards right of the smart quote
 
 then:
 
-remember to use capital letters for commands like:
+remember to use capital letters for commands like (even if it is not needed as SQL requires no special formatting)
 
 SELECT, SHOW, etc

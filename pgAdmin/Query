@@ -1,0 +1,7 @@
+Just select the database you wish first and then:
+
+Tools>Query Tool
+
+You can also create a new database with
+CREATE DATABASE mydatabase;
+Then refresh the object browserg

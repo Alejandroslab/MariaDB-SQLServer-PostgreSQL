@@ -1,3 +1,9 @@
+=
+<> or != not equal to
+>,< greater than, less than
+>= greater than or equal to
+<= less than or equal to
+
 BETWEEN
 it controls if a values is included in a specific interval (including the extremes)
 
@@ -22,6 +28,8 @@ it allows to use some sort of wildcards:
 
 LIKE 'ab%' allows to find all strings that starts with the characters 'ab..'
 LIKE '%ab%' allows to find all strings that contain 'ab'
+you can also use the underscore that is a wildcard matching just one character
+LIKE '_aker'
 
 SELECT Last_Name, Department
 FROM Employees
@@ -37,6 +45,9 @@ the character $ is the escape character, therefore the sequence '$_'
 says that the character _ (underline) is the character to find in
 the string and not a jolly character
 
+________________
+ILIKE
+is the same as LIKE but is case insensitive
 ____________________
 IS NULL
 
@@ -50,3 +61,7 @@ WHERE Wage IS NOT NULL;
 
 
 For all this operators
+
+________________
+NOT
+negates a condition
