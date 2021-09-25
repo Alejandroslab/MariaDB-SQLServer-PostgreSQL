@@ -1,0 +1,8 @@
+char(n)
+
+it is better to use always char(n) where n is the number of char
+Doing this will allow to anyone to easily understand which kind of data have been saved in your db.
+anyways varchar(n) is yet used as a standard too
+
+Use integer when possible unless you use decimal
+floating-point types will save space but sometimes will lead to numerical mistakes

@@ -1,0 +1,6 @@
+cast() functions only works when the target data type can accomodate the orignal value
+
+-- Alternate notation for CAST is the double-colon (that is '::') (ONLY IN POSTGRE)
+
+SELECT timestamp_column::varchar(10)
+FROM date_time_types;

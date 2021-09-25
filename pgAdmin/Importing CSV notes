@@ -1,0 +1,9 @@
+when importing the delimiter is usually the comma (although you can change it)
+
+REMMEBER! that if you use a double quote " " then the import function will ignore the delimiters inside the double quoted colum!
+
+e.g.
+
+Maria, Rossi, "20100, Milano", Italia
+
+In this case the comma inside the double quote "20100, Milano" will be ignored 

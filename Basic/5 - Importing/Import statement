@@ -1,0 +1,8 @@
+You can import with
+LOAD DATA INFILE
+in mysql
+
+COPY
+in postgre
+
+BULK INSERT in Sql server
