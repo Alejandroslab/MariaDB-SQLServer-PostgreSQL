@@ -1,0 +1,26 @@
+You will use COPY but instead of 'FROM' you will be using 'TO':
+
+COPY mytable
+TO 'C:\Your Directory\mytable.txt'
+WITH (FORMAT CSV, HEADER, DELIMITER '|');
+
+EXPORTING ONLY SOME COLUMNS:
+
+
+COPY mytable (column1, column3)
+TO 'C:\Your Directory\mytable.txt'
+WITH (FORMAT CSV, HEADER, DELIMITER '|');
+
+
+EXPORTING QUERY result
+
+COPY (
+SELECT column1, column3
+FROM mytable
+WHERE column1 ILIKE '%red%'
+)
+TO 'C:\Your Directory\mytable.txt'
+WITH (FORMAT CSV, HEADER, DELIMITER '|');
+
+REMEMBER! this commands will not work if your postgre instance is located on another computer, elsewhere on a network
+You can solve this problem just using the import export wizard (right click on your table)
