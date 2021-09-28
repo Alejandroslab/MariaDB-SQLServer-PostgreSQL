@@ -1,1 +1,10 @@
 even in postegre the table must exist before importing data
+
+using the COPY command the path cannot have spaces inside like this:
+
+
+COPY mytable
+FROM 'C:\Your Directory\mytable.csv'
+WITH (FORMAT CSV, HEADER);
+
+the 'Your Directory' has a space in between and will not allow to import the data

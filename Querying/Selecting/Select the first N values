@@ -1,0 +1,9 @@
+just use the keyword LIMIT
+
+
+SELECT mycolumn, mycolumn2
+FROM mytable
+ORDER BY mycolumn2 DESC
+LIMIT 5;
+
+in this case there will be only 5 rows retrieved (the first 5 rows)
