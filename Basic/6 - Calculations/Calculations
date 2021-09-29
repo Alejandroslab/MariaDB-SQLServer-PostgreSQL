@@ -1,2 +1,14 @@
 SELECT 3 + 3;
 SELECT 20 / 6;
+
+% is the modulo
+
+^ is exponentiation
+
+|/ is for square root
+
+/ division
+
+||\ cube root
+
+! is factor
