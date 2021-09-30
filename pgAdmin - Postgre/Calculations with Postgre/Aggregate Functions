@@ -1,0 +1,9 @@
+SELECT sum(column1) AS "sum of the column",
+round(avg(column1),0) AS "average of the column"
+FROM mytable
+
+
+for the median you have to use percentile function that are:
+percentile_cont(n) for continous values
+and
+percentile_disc(n) for discrete values

@@ -1,0 +1,6 @@
+SELECT (CAST(column1 AS numeric(8,1)) / column2 ) * 100 AS "percentagee"
+FROM mytable
+ORDER BY "percentagee" DESC;
+
+
+in this case column1 will be transformed to a fixed decimal data type (thaat is numeric with a total of 8 digits and 1 of scale (the number to the right of the decimal sign))

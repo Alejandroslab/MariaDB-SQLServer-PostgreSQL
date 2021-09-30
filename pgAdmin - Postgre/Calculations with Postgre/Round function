@@ -1,0 +1,6 @@
+round((column1),0)
+
+will not leave any decimal (it will round to the first integer)
+
+round((column1),1)
+will round to the first decimal

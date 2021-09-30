@@ -1,0 +1,9 @@
+CREATE TABLE mytable (
+column1 integer
+column2 integer
+column3 integer
+);
+
+INSERT INTO mytable VALUES
+(1,2,3),
+(3,4,5);

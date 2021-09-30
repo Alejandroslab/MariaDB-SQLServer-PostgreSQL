@@ -14,3 +14,5 @@ SELECT 20 / 6;
 ||\ cube root
 
 ! is factor
+
+The operator precedence is the same as the established math standard 
