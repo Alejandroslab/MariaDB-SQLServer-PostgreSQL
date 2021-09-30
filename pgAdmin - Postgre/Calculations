@@ -1,6 +1,8 @@
 SELECT 3 + 3;
 SELECT 20 / 6;
 
+(You do not need to put spaces between numbers and operators)
+
 % is the modulo
 
 ^ is exponentiation
