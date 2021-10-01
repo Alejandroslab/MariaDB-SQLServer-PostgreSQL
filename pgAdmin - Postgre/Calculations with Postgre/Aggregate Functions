@@ -7,3 +7,9 @@ for the median you have to use percentile function that are:
 percentile_cont(n) for continous values
 and
 percentile_disc(n) for discrete values
+
+you will usually use percentile_cont(n) for continous values
+
+SELECT percentile_cont(.5)
+WITHIN GROUP (ORDER BY column1)
+FROM mytable;
