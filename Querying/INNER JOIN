@@ -1,6 +1,6 @@
 Select Employees.*, Departments.*
 FROM Departments INNER JOIN Employees ON
-     Departments.Code = Employees.Department
+     Departments.Code = Employees.Department;
 
 Structured query:
 
