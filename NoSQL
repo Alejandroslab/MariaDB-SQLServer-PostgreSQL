@@ -1,0 +1,7 @@
+NotOnlySql 
+
+SQL databases requires predefined at me as structures before loading data 
+
+This is not always possible. Here is where NoSQL comes at hand 
+
+The schemas are dynamic and allow horizontal scaling that means that your data can be spread across multiple machines 
