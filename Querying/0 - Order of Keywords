@@ -4,3 +4,22 @@ WHERE filtering rows
 GROUP BY split rows in groups
 HAVING filter grouped rows
 ORDER BY columns to sort 
+
+Only select and from are required. 
+
+Remember the order with a sentence 
+
+Start
+Friday
+With
+Grandma
+Homemade
+Oatmeal
+
+Anyways the order of execution is different 
+First sql gather all data with FROM
+Filters rows with WHERE
+groups rows with the GROUP BY
+Filters grouped rows with HAVING 
+Only now specifies columns with SELECT
+Rearranges results with the ORDER BY

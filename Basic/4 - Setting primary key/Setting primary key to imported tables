@@ -9,3 +9,5 @@ after you create a primary key and the set it as not a primary key
 
 if you want the same column the be again your primary key it would be necessary to delete the column and
 recreate it. (it gave me a strange error in workbench..)
+
+A foreign key refers to a primary key in another table 
