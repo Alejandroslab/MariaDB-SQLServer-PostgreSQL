@@ -3,3 +3,5 @@ MySQL
 Oracle
 PostgreSQL
 SQLite
+
+SQLite is less secure and can’t handle multiple users 

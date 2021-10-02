@@ -1,0 +1,5 @@
+You will need to install a package to establish a direct connection to your database 
+
+For postgresql 
+
+install.packages(“RPostgres”)

@@ -1,0 +1,43 @@
+People who have read and write access are able to perform CRUD operations( create, read, update and delete)
+They are the database administrator or engineer
+
+People who have only read access can querying tables 
+They are usually data analysts or data scientists
+
+
+As a data scientist or data analyst you will perform your analysis in python or R and also write SQL queries to pull data from a database 
+
+A good way to approach this data analysis workflow is to connect directly Python or R to a database and write sql queries within python or r
+
+To connect python you will need a database driver that you can install with pip or conda 
+
+
+For postgresql you can install the driver with
+
+Pip install psycopg2
+
+Then in your python code you will need to import this package and make the connection
+
+For postgresql
+
+import psycopg2
+conn = psycopg2.connect(host=‘localhost’, database=‘my_database’, user=‘alex’,password=‘mypassword’)
+
+Where not all arguments are required. If you exclude an argument then the default value will be used.The default host is localhost 
+
+Remember to keep safe your password and be able to share your code you must create another python file with the credentials or just use ssh
+
+Then you can query within python 
+
+cursor= conn.cursor()
+cursor.execute(‘SELECT * FROM mytable;’)
+result = cursor.fetchall()
+print(result)
+
+
+When you have finished close the connection. As this is a good practice to save resources 
+
+
+To connect to a database you can also use SQLAlchemy that convert SQL data into python objects 
+
+You can install it with pip
