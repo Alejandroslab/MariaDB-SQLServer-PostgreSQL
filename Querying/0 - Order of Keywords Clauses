@@ -23,3 +23,15 @@ groups rows with the GROUP BY
 Filters grouped rows with HAVING 
 Only now specifies columns with SELECT
 Rearranges results with the ORDER BY
+
+LIMIT clause is only supported by MySQL, PostgreSQL and SQLite
+
+
+Other way to see clauses
+
+SELECT Last_Name, First_Name, Description,
+Wage - (SELECT AVG(Wage) FROM Employees)
+FROM Employees, Departments
+WHERE Department = Code AND
+Wage > (SELECT AVG (Wage)
+        FROM Employees);

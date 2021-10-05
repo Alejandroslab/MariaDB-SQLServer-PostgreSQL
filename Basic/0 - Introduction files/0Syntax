@@ -4,7 +4,7 @@ Second: be carefol to quotes!
 
 this is very insidious:
 
-the quotes always must be single quotes like '' not smart quotes like ‘ ’
+the quotes always must be single quotes like '' not backticks like ‘ ’
 
 the difference stands in the little inclination towards right of the smart quotes.
 
@@ -15,3 +15,8 @@ then:
 remember to use capital letters for commands like (even if it is not needed as SQL requires no special formatting)
 
 SELECT, SHOW, etc
+
+
+SQL does not care about the number of spaces between terms it will run the code until the semicolon 
+
+This is useful to keep the code readable 
