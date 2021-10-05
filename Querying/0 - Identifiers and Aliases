@@ -7,5 +7,5 @@ A clause is a section of a statement
 
 An expression is a formula that results in a value
 
-A predicate is a logical comparison 
+A predicate is a logical comparison that results in true false or unknown. They are also called conditional statements
 
