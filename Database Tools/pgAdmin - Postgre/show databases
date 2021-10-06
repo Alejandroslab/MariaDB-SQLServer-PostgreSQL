@@ -1,0 +1,12 @@
+\l
+
+To switch
+
+\c anotherdb 
+
+To show tables 
+
+\d 
+
+To exit
+\q

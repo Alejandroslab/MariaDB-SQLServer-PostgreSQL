@@ -1,0 +1,22 @@
+Amazon redshift and Google bigquery require SQL queries to pull data
+
+SQL is out for 50 years almost and is still relevant in almost any industry 
+
+Attribute (column)
+Tuple(row)
+
+
+SQL is not a general-purpose programming language.
+It is a special-purpose programming language 
+The kind of programming is called declarative which is different than like python (imperative programming)
+
+Anyway there are extension that allow SQL to do more like 
+Oracle that has procedural language (PL-SQL)
+And SQL Server that has transact SQL 
+
+You can do more with these
+
+ANSI SQLrefers to SQL code that follows the ANSI standard 
+
+Try to use the latest standard also for compatibility between RDBMS 
+Anyways have a look to older standards as it has probably been used by your company years ago

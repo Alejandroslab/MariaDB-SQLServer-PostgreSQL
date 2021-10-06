@@ -1,5 +1,6 @@
 
 
+<<<<<<< HEAD
 SELECT Last_Name, First_Name, Description,
 Wage - (SELECT AVG(Wage) FROM Employees)
 FROM Employees, Departments
@@ -12,3 +13,5 @@ Wage > (SELECT AVG (Wage)
         FROM
         WHERE
         ORDER BY
+=======
+>>>>>>> 67080bbecdd047433b185e21ce455f44f205c3b5

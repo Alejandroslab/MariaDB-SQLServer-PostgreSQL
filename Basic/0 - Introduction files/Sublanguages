@@ -1,0 +1,31 @@
+There are many sublanguages inside SQL:
+
+Data Query Language (DQL)
+The most used.
+Necessary to retrieve data
+
+The common command is SELECT
+
+Data Definition Language (DDL) 
+Necessary to create a database and edit it
+Common commands
+CREATE, ALTER, DROP
+
+Data Manipulation Language (DML)
+Used to manipulate or modify data 
+Common commands 
+INSERT UPDATE DELETE
+
+Data Control Language (DCL)
+Language to access data in a database 
+
+Common commands 
+GRANT REVOKE
+
+Transaction Control Language (TCL)
+Language used to manage transactions or apply permanent changes 
+
+Common commands 
+COMMIT ROLLBACK
+
+The most used is DQL
