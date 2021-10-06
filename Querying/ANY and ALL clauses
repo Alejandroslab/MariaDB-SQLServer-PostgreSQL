@@ -6,3 +6,9 @@ FROM Employees, Departments
 WHERE Department = Code AND
 Wage > (SELECT AVG (Wage)
         FROM Employees);
+
+        
+        SELECT
+        FROM
+        WHERE
+        ORDER BY
