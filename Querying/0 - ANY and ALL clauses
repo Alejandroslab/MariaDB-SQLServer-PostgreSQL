@@ -1,0 +1,65 @@
+SELECT columns to display (columns can be also the result of the funciont and MUST BE SEPARATED by comma)
+FROM tables or tables
+JOIN
+WHERE conditions on rows (filtering rows)
+GROUP BY split rows in groups
+  HAVING conditions on groups (filter grouped rows)
+ORDER BY order on the indicated columns listed with the select clause (columns to sort)
+LIMIT
+
+
+
+the mandatories are just SELECT and FROM
+the other ones are facultative
+
+
+
+Remember the order with a sentence
+
+Start
+Friday
+Joy
+With
+Grandma
+Homemade
+Oatmeal
+
+Anyways the order of execution is different
+First sql gather all data with FROM
+Filters rows with WHERE
+groups rows with the GROUP BY
+Filters grouped rows with HAVING
+Only now specifies columns with SELECT
+Rearranges results with the ORDER BY
+
+LIMIT clause is only supported by MySQL, PostgreSQL and SQLite
+
+
+--------------------------------------
+
+EXAMPLES
+
+Other way to see clauses
+
+SELECT Last_Name, First_Name, Description,
+Wage - (SELECT AVG(Wage) FROM Employees)
+FROM Employees, Departments
+WHERE Department = Code AND
+Wage > (SELECT AVG (Wage)
+        FROM Employees);
+
+
+
+SELECT Last_Name, First_Name, Description,
+      Wage - (SELECT AVG(Wage) FROM Employees)
+
+FROM Employees, Departments
+JOIN Employees ON
+     d.Code = e.Department;
+
+WHERE Department = Code AND
+Wage > (SELECT AVG (Wage)
+        FROM Employees);
+
+        NNER JOIN Employees ON
+             Departments.Code = Employees.Department;
