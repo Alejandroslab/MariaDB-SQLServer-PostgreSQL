@@ -7,3 +7,5 @@ Type a name in the field 'Filename'
 Role name 'postgres' the user
 
 Click on Restore!
+
+Now under 'Schemas'>Public>Tables 
