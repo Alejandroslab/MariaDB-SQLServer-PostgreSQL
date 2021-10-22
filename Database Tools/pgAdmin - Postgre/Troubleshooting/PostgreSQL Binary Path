@@ -1,2 +1,5 @@
 To Fix this
-just go to File>Preferences
+just go to File>Preferences>Paths>Binary Path
+
+Go to PostgreSQL 13
+Choose the path: C:\\Program Files\PostgreSQL\14\bin
