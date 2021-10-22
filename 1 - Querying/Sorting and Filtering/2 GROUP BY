@@ -2,7 +2,9 @@ you can group the result of the aggregate function (count, sum, etc)
 with a GROUP BY
 
 when you use GROUP BY all the attributes that are present in the list near Select
-must be included in the clause GROUP BY
+MUST be included in the clause GROUP BY
+
+
 
 SELECT Department, COUNT(ID), SUM(Wage),
 FROM Employees

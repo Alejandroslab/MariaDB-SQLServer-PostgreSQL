@@ -13,8 +13,12 @@ SELECT LAST_NAME, Wage
 FROM Employees
 ORDER BY Wage DESC, LAST_NAME;
 
+
+
 this will allow to order in descending order by the wage level
 when the wage are the same it will order by LAST_NAME.
+
+
 
 you can also use the number for the field
 

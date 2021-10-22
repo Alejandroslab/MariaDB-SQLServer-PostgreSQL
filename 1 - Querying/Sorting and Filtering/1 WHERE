@@ -1,8 +1,9 @@
-SELECT last_name, school, FROM teachers
+SELECT last_name, school
+FROM teachers
 WHERE school = 'New York School';
 
 You can also use AND:
 
-SELECT last_name, school, FROM teachers
-WHERE school = 'New York School'
-AND salary < 40000;
+SELECT last_name, school, 
+FROM teachers
+WHERE school = 'New York School' AND salary < 40000;

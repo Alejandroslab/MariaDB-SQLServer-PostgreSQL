@@ -10,7 +10,9 @@ the selection of the rows that respects the written conditions near 'where'
 
 having has similar characteristics than 'where' but it
 acts in a different way: with 'where' some conditions vinculate on
-the tbale rows, with 'having' the control of the condition is made on the result
+the tbale rows, 
+
+with 'having' the control of the condition is made on the result
 of the aggregate functions applied to group of rows
 
 to sum up:
