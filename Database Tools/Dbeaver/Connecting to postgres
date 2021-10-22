@@ -1,0 +1,9 @@
+Click on 'Connect to a Database'
+Select PostgreSQL
+Next
+on Database just type in the name of the Database that you want to connect to your Dbeaver
+Type also your password (and if you want store your password)
+
+Now Click on Done
+
+Now under 'Schemas' you will find your database
