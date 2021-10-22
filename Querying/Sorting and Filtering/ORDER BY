@@ -1,5 +1,5 @@
 If you want to sort you use ORDER BY
-the direction is always ascendent and you have to specify DESC if you want the contrary
+the direction is ALWAYS ascendent and you have to specify DESC if you want the contrary
 
 ORDER BY should be put as last statement of the command:
 
