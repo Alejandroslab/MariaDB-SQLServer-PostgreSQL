@@ -1,3 +1,16 @@
+The syntax is:
+
+SELECT
+FROM table1 a
+JOIN table2 b ON a.common_column = b. common_column
+group by a.common_column;
+
+
+
+
+
+
+
 Select Employees.*, Departments.*
 FROM Departments INNER JOIN Employees ON
      Departments.Code = Employees.Department;
