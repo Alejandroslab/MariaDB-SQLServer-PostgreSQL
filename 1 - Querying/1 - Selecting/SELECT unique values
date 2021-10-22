@@ -1,6 +1,0 @@
-SELECT DISTINCT mycolumn FROM mytable;
-
-it will retrieve only unique values from the column mycolumn
-Good for assessing data quality
-
-It works also in more than one column

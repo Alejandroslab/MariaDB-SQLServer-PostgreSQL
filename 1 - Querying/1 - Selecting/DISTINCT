@@ -1,0 +1,15 @@
+   To get all the cities per employee without duplicates just use DISTINCT
+
+SELECT DISTINCT City
+FROM Employees;
+
+without DISTINCT you will get city duplicates based on the total number of the records
+that in this case corresponds to the table Employees
+
+
+SELECT DISTINCT mycolumn FROM mytable;
+
+it will retrieve only unique values from the column mycolumn
+Good for assessing data quality
+
+It works also in more than one column

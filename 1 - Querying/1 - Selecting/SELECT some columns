@@ -1,1 +1,3 @@
 SELECT firstcolumn, secondcolumn FROM mytable;
+
+Always separate the column with comma 
