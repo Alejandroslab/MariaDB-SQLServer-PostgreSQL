@@ -1,4 +1,5 @@
 If you want to rename a column when querying use AS
+
 SELECT ID AS IDNumber, First Name, Last Name
 FROM Employees;
 

@@ -1,0 +1,3 @@
+SELECT CURRENT_DATE;
+
+will retrieve the current date

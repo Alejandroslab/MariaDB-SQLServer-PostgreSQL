@@ -1,0 +1,48 @@
+ERROR ON WINDOWS:
+
+In this case you will need to change your password encryption from sha-256 to md5
+
+to do that change 'password_encryption' in the file 'postgresql.conf' inside
+C:/Programs/PostreSQL/14/data
+you must also uncomment removing the '#' symbol
+
+you must also change the 'sha-256' inside the file 'pg_hba'
+
+Now you have to restart postgres. To do that the fastest way is to go to:
+ 'Services.msc' and look for and restart the postgresql server
+
+(The other way implicates to cd to /data folder again within cmd and to run the command 'pg_ctl' and restart..)
+
+
+
+
+Now you need to change your password in order to get the new (lower) encryption
+
+To do that open 'cmd':
+
+Then change directory to :
+
+C:\Program Files\PostreSQL\14\bin
+
+run this command to access with your user (in this case the user is called 'postgres'):
+
+psql -U postgres
+
+now type your current password
+
+ok. now you are inside your user. the cmd line will change to 'postgres-#'
+to change the password there are different ways:
+The solution that worked (probably because cmd was not running as Administrator)
+was to type:
+
+/password
+
+now postrgesql wil ask for the new password and to confirm it
+
+after that your password is definitely changed.
+
+(The other solution was to use a command like:
+
+ALTER USER myuser WITH PASSWORD 'mynewpassword';
+
+but this did not work out)

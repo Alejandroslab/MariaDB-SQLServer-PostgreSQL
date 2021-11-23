@@ -1,0 +1,5 @@
+Round is a function to round to decimal places
+
+ROUND(population * 0.9, 0)
+
+will round to zero decimal places the result of "population * 0.9"

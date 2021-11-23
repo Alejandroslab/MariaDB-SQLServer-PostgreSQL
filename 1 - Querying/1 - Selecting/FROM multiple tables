@@ -1,0 +1,6 @@
+SELECT *
+FROM waterfall w
+JOIN tour t ON w.id = t.stop;
+
+
+this will get a 'result table'
