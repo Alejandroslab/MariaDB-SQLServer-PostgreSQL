@@ -37,7 +37,7 @@ was to type:
 
 /password
 
-now postrgesql wil ask for the new password and to confirm it
+now postrgesql will ask for the new password and to confirm it
 
 after that your password is definitely changed.
 
