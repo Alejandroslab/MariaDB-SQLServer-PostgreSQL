@@ -19,6 +19,13 @@ With this in mind, go to the same previous path and run the following command:
 console.bat
 
 
+____________________________
+REMEMBER! You should download java from the website (java 1.8) and install it
+If you have another java like JDK17 it will not work the
+"server.bat" file. Therefore if you have multiple java on
+your pc try to unistall the ones that you do not need
+
+
 Once the server is started, go to the web browser and enter the following in the navigation bar: http://localhost:2480. You have to enter the password created for the root user.
 
 After entering the password correctly, you will see the OrientDB graphical interface.
