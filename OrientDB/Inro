@@ -1,0 +1,4 @@
+ This is a NoSQL database manager made in java focused on combining the model of documents and graphs to make robust applications without the need to have more than one data manager. OrientDB handles 2 APIs, graphics and documents, as far as graphics are concerned, it uses documents to create its nodes. On the other hand, for documents, it uses keys and objects to store data. It also includes interesting features to the document model, such as the ability to create links to other documents and lists. It is also possible to define the rigidity of the model, giving the option to choose mandatory fields. This database manager is a good option for developers.
+
+ First you will need java (at the moment it works well on java 11 and java 12.
+ It does not work on java 17)

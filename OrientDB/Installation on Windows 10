@@ -1,0 +1,43 @@
+Download the zip
+then extract it and copy the folder to your C:\ drive.
+
+To run it just run 'server.bat'
+
+you can run it also with cmd (and admin privileges)
+
+simply moving to the folder 'bin' and then running:
+
+.\server.bat
+
+
+The wizard will ask you to assign the password for the root user.
+
+Finally run the console :
+You can use the following command to run OrientDB under the console.
+With this in mind, go to the same previous path and run the following command:
+
+console.bat
+
+
+Once the server is started, go to the web browser and enter the following in the navigation bar: http://localhost:2480. You have to enter the password created for the root user.
+
+After entering the password correctly, you will see the OrientDB graphical interface.
+
+To shutdown the engine, you need to run the following command from the bin folder:
+
+shutdown.bat -p rootpasword
+
+Remember to replace rootpassword with the password you created.
+
+
+
+__________________-
+
+you can also add it to your Environment Variables simply adding a new key called:
+
+ORIENTDB_HOME = C:\orientdb-3.2.1
+
+and then adding to the 'Path' folder your 'bin' folder that is the folder
+in which all the executables are located:
+
+C:\orientdb-3.2.1\bin
