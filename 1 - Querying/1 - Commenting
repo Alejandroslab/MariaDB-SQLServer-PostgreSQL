@@ -1,0 +1,20 @@
+Comment with: --
+
+
+SELECT * FROM TABLE
+--THIS IS A COMMENT
+
+You can also place a multiline comment.
+
+SELECT * FROM TABLE
+/* This is a multiline
+comment
+*/
+
+
+Finally you can also set a comment in the middle of the code:
+
+SELECT * FROM TABLE
+WHERE NAME= 'MIKE' /* AND SURNAME = 'ROSS' */
+
+Doing this the part "AND SURNAME = 'ROSS' " will not be considered!
