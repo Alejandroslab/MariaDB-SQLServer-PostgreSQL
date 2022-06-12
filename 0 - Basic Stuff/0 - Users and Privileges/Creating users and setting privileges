@@ -36,6 +36,11 @@ GRANT ALL PRIVILEGES ON * . * TO 'test'@'localhost';
 
 FLUSH PRIVILEGES;
 
+If you want to grant privileges on all interfaces isntead of 'localhost' use '%'
+
+GRANT ALL PRIVILEGES ON * . * TO 'test'@'%';
+
+FLUSH PRIVILEGES;
 
 
 
