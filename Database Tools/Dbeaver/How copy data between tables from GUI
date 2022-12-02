@@ -1,0 +1,10 @@
+You can move columns and then copy with ctrl+c
+
+to paste to a new table just create first a new row then click right and select 'paste advanced' leave checked 'insert multiple rows' and click ok
+
+if you have a lot of rows to copy it will take some time
+
+if you are satisfied finally click on save
+CAREFUL
+YOU CANNOT UNDO changes if you have not set up the commit mode
+anyways you can delete the added rows

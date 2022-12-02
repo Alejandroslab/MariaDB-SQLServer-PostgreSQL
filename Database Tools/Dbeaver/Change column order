@@ -1,0 +1,7 @@
+You must use alter table
+
+In dbeaver under 'Properties' at the botton you can see some buttons that will help you to move columns.
+
+then remember to save (ctrl+s) and click on 'Persist' to make the changes permanent
+
+if you want only to temporarily move the columns under 'Data' tab just drag the columsn. This solution is not persistent
