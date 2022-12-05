@@ -1,0 +1,6 @@
+Just go to control panel then select Micrsoft Sql Server 2019
+
+click on unistall
+then the Microsoft Wizard will appear and will guide you to unistall the instance
+
+this could be helpful when you have more than 2 instances runngin and you want one to be deleted 

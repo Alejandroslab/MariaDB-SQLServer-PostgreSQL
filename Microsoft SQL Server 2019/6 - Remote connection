@@ -1,0 +1,17 @@
+To set remote connection you will need your hostname and then the sql user and password that you can set 
+click right on the folder Logins under Security and create a new user.
+
+Then click right on your instance and select Properties. Under 'Connections' be sure that you have flagged the option 'Allow remote connections'.
+If you have not have it flagged then flag it and restart the sql instance. 
+
+
+Finally check your firewall to allow port 1433. It should connect without having to create a rule but you can check it.
+
+
+In yoour remote machine opne Microsoft SQL Server Management Studio, select 'Connect' then as Server Type 'Database engine', as 'Server name' the hostname of the machine in which your sql instance is installed and as 'Authentication' select 'SQL Server Authentication' and type in your user and password.
+
+The first time you connect you will be asked to change your current password.
+
+done!
+
+Finally you can set the permission of your new user under 'Properties' ->Permissions of your Instance

@@ -1,0 +1,35 @@
+you can use:
+
+which mysql mariadb psql 
+
+
+this will inspect all the PATH directories looking for mysql then for mariadb and finally for psql (psql is postgres)
+
+
+or you can use:
+
+whereis mysql mariadb psql
+
+that is a similar command 
+
+if paths will appear this means that the sql services are installed.
+
+anyways they may not be started. check it with:
+
+
+sudo systemctl  status mysql
+
+(do not use 'service' instead of systemctl as this will not be the standard anymore)
+this will check both mysql and mariadb
+
+
+
+You may sometime meet this error:
+
+error: 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' -- Missing /var/run/mysqld/mysqld.sock
+
+the error itself means that mysql or mariadb is installed.
+
+this can be fixed just starting the service;
+
+sudo service mysql start
