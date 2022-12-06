@@ -37,3 +37,8 @@ that is another server.
 You will have therefore 2 sql server runnning
 
 You can check this running: 'SQL Server Configuration Manager'
+
+
+When you install the instance you will get some default db that are 'master', 'system' and something similar 
+
+Remember that databases are divided in schemas and schemas are made by tables

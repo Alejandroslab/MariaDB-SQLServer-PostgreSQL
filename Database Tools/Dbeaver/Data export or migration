@@ -1,0 +1,53 @@
+We can export entire tables from one server to another one no matter the type of server (may it be mysql, mariadb, postgres, sql server)
+
+In the target server (sql server) you need first to create a new Database and then a test table inside 
+(otherwise dbeaver will not see the database). to do that click right on 'Databases' and 'Create new database' or something similar. Set the name and do not add anything else. Just leave the PRIMARY as Filegroup and Logical name as appears.
+
+
+Then create your temporary test table clicking right under the 'Tables' folder then 'New table' set just a column with any name and save the table  with any name
+
+ (you can then delete this test table as it is needed just to dbeaver see the db)
+ 
+YOU DO NOT NEED TO CREATE A NEW TABLE WITH THE SAME COLUMNS OF THE SOURCE SERVER! Dbeaver will do that for you .
+
+
+in dbeaver  just connect to both servers, the source and the destination (target) 
+
+
+Now in the source server click right on the table you want to export and select 'Export Data'
+A Wizard will appear leave selected 'Database' as type an click Next 
+
+Now in Tables mapping you must select the 'dbo' of the schema of your sql server database.
+
+
+Click on 'Choose' select the Database under the name of your sql server connection and select 'Schema'
+finally select 'dbo'.
+
+'dbo' is the default name that stands for a container of tables. 
+
+This is different than mysql as sql server work differently.
+
+You must select 'dbo' inside the schema inside the Database. If you choose the schema or database you will get an error!
+
+
+Check that the column 'Mapping' must be left as 'create' 
+
+This means that dbeaver will create the same exact source table inside the 'dbo' container.
+
+Now in the next settings you can leave everything as default.
+
+Click on finish
+
+wait and done!
+
+the create table in sql server will open automaitcally in dbeaver.
+
+Now you can set a comment in the descritpion (like backup or whatever)
+
+REMEMBER! if you get the INSERT error this is due to permissions.
+You must go to Logins on SQL Server, double click on your user and finally go to User Mapping 
+flag the Database and the Schema
+
+click ok
+
+done!

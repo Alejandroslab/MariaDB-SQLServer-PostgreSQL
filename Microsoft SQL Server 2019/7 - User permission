@@ -1,0 +1,12 @@
+when you create a login user you can set permission to it
+In MSSMS under 'Databases' 'Security' 'Logins' select the user that you have created (to create one click right on the 'Logins' folder)
+
+then double click on the user
+
+You may want to change permissions under 'Securables' and also under 'User mapping'
+
+
+With user mapping you can assign the user to be the dbowner of a particular table
+(just flag the 'dbowner')
+
+In particular I have solved some problems using 'User mapping' as it was not possible to assign permissions differently in a data migration from a mysql instance to sqlserver
