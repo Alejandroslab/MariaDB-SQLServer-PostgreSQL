@@ -1,0 +1,23 @@
+you can speed up queries by adding an index to one or more
+columns. The database uses the index as a shortcut rather than scanning
+each row to find data. That’s admittedly a simplistic picture of what, in
+SQL databases, is a nontrivial topic.
+
+Each time you add a primary key or
+UNIQUE constraint to a table, PostgreSQL (as well as most database systems)
+places an index on the column. Indexes are stored separately from the
+table data, but they’re accessed automatically when you run a query and
+are updated every time a row is added or removed from the table
+
+In PostgreSQL, the default index type is the B-Tree index. It’s created
+automatically on the columns designated for the primary key or a UNIQUE
+constraint, and it’s also the type created by default when you execute a
+CREATE INDEX statement. B-Tree, short for balanced tree, is so named because
+the structure organizes the data in a way that when you search for a value,
+it looks from the top of the tree down through branches until it locates
+the data you want.
+
+PostgreSQL incorporates additional index types, including the
+Generalized Inverted Index (GIN) and the Generalized Search Tree (GiST).
+Each has distinct uses, and I’ll incorporate them in later chapters on full
+text search and queries using geometry types

@@ -1,0 +1,21 @@
+Part of the science (or art, some may say) of joining tables involves
+understanding how the database designer intends for the tables to relate,
+also known as the database’s relational model. The three types of table
+relationships are one to one, one to many, and many to many.
+
+In a one-to-many relationship, a key value in the first table will have
+multiple matching values in the second table’s joined column. Consider a
+database that tracks automobiles. One table would hold data on
+automobile manufacturers, with one row each for Ford, Honda, Kia, and
+so on. A second table with model names, such as Focus, Civic, Sedona,
+and Accord, would have several rows matching each row in the
+manufacturers’ table.
+
+In a many-to-many relationship, multiple rows in the first table will have
+multiple matching rows in the second table. As an example, a table of
+baseball players could be joined to a table of field positions. Each player
+can be assigned to multiple positions, and each position can be played by
+multiple people.
+Understanding these relationships is essential because it helps us
+discern whether the results of queries accurately reflect the structure of
+the database.

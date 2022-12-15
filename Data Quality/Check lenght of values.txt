@@ -1,0 +1,13 @@
+It’s a good idea to check for unexpected values in a column that should be
+consistently formatted. For example, the U.S. ZIP
+Codes with five digits.
+
+We can check with 
+
+
+SELECT length(zip),
+count(*) AS length_count
+FROM meat_poultry_egg_inspect
+GROUP BY length(zip)
+ORDER BY length(zip) ASC;
+

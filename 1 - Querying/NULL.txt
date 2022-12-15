@@ -1,0 +1,3 @@
+When a SQL join returns empty rows in one of the tables, those
+columns don’t come back empty but instead come back with the value
+NULL. 

@@ -35,4 +35,10 @@ if you want just to grant privilges to some databases:
 
 GRANT ALL PRIVILEGES ON `mytestdb` . * TO 'test'@'%';
 
+all privileges to the user:
+
+GRANT ALL PRIVILEGES ON * . * TO 'test'@'%';
+
 FLUSH PRIVILEGES;
+
+

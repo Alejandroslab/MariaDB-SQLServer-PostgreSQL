@@ -1,0 +1,8 @@
+run this to see if the server is running
+
+ps -Af | grep mysqld
+
+this will work either you have mysql or mariadb 
+this will give you hint in something you may have forgotten 
+(like set up the bind address to 0.0.0.0 to allow remote connections to the remote server inside the file 
+'my.cnf')

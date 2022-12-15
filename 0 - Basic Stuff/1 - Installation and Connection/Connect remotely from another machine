@@ -1,0 +1,15 @@
+You may want to connect from another machines.
+To do that just use the following command 
+
+mysql -h hostname -u username -p
+
+where hostname is the hostname of the remote machines (for postgres you will use 'psql' instead of 'mysql' command)
+
+username is the user that can access to the remote sql server
+
+after pressing enter
+
+you must type the password of that username 
+
+Remember the user must exist in the sql server (if not you must create the user with remote access and 
+assign permissions)

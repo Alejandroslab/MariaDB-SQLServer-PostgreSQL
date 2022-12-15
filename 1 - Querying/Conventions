@@ -1,0 +1,29 @@
+Microsoft recommends Pascal case
+for its SQL Server users. Whichever convention you prefer, it’s most
+important to choose a style and apply it consistently. Be sure to check
+whether your organization has a style guide or offer to collaborate on
+one, and then follow it religiously.
+
+Use snake case. Snake case is readable and reliable, as shown in the
+earlier trees_planted example. It’s used throughout the official
+PostgreSQL documentation and helps make multiword names easy
+to understand: video_on_demand makes more sense at a glance than
+videoondemand.
+
+Make names easy to understand and avoid cryptic
+abbreviations. If you’re building a database related to travel,
+arrival_time is a better reminder of the content as a column name than
+arv_tm.
+
+For table names, use plurals. Tables hold rows, and each row
+represents one instance of an entity. So, use plural names for tables,
+such as teachers, vehicles, or departments.
+Mind the length. The maximum number of characters allowed for
+an identifier name varies by database application: the SQL standard
+is 128 characters, but PostgreSQL limits you to 63, and the Oracle
+system maximum is 30. If you’re writing code that may get reused in
+another database system, lean toward shorter identifier names.
+When making copies of tables, use names that will help you
+manage them later. One method is to append a YYYY_MM_DD date to
+the table name when you create it, such as tire_sizes_2017_10_20. An
+additional benefit is that the table names will sort in date order.

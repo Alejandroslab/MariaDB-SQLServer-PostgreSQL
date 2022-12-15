@@ -1,0 +1,2 @@
+CREATE TABLE meat_poultry_egg_inspect_backup AS
+SELECT * FROM meat_poultry_egg_inspect;

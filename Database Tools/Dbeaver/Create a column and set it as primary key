@@ -1,0 +1,12 @@
+Create a new column name it like 'id' 
+
+then set data type as 'int' (mandatory)
+do not set autoincrement
+
+click
+ok
+
+now go to Constraint 
+New constraint 
+
+select the ID column and set it as primary key 

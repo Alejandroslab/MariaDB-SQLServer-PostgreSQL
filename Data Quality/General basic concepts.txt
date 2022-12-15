@@ -1,0 +1,15 @@
+If your interview of the data reveals too many missing
+values or values that defy common sense—such as numbers
+ranging in the billions when you expected thousands—it’s
+time to reevaluate its use. The data may not be reliable
+enough to serve as the foundation of your analysis.
+
+If you suspect as much, the first step is to revisit the
+original data file. Make sure you imported it correctly and
+that values in all the source columns are located in the
+same columns in the table. You might need to open the
+original spreadsheet or CSV file and do a visual
+comparison. The second step is to call the agency or
+company that produced the data to confirm what you see
+and seek an explanation. You might also ask for advice
+from others who have used the same data.

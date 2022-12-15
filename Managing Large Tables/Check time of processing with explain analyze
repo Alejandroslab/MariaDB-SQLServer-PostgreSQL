@@ -1,0 +1,6 @@
+EXPLAIN ANALYZE included at the beginning. Instead of showing the query results,
+these keywords tell the database to execute the query and display statistics
+about the query process and how long it took to execute.
+
+EXPLAIN ANALYZE SELECT * FROM new_york_addresses
+WHERE street = '52 STREET';

@@ -1,0 +1,17 @@
+In standard ANSI SQL and PostgreSQL, we calculate the Pearson
+correlation coefficient using corr(Y, X). It’s one of several binary aggregate
+functions in SQL and is so named because these functions accept two
+inputs. In binary aggregate functions, the input Y is the dependent variable
+whose variation depends on the value of another variable, and X is the
+independent variable whose value doesn’t depend on another variable.
+
+Even though SQL specifies the Y and X inputs for the corr() function,
+correlation calculations don’t distinguish between dependent and independent
+variables. Switching the order of inputs in corr() produces the same result.
+However, for convenience and readability, these examples order the input
+variables according to dependent and independent.
+
+
+SELECT corr(median_hh_income, pct_bachelors_higher)
+AS bachelors_income_r
+FROM acs_2011_2015_stats;

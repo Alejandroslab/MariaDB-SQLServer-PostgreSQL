@@ -1,0 +1,2 @@
+Check constraint is useful to check consistency of data 
+Like age must be greater than zero. it canno exist age negative

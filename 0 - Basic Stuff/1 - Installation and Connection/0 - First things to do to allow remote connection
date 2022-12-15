@@ -1,0 +1,19 @@
+Remote connection errors are:
+
+'ERROR 2003 (HY000): can't connect...'
+or in Dbeaver 'connection refused. socket error'
+
+check this:
+
+Change the file /etc/my.cnf
+
+replace bind address from 127.0.0.0 to 0.0.0.0
+save and then restart the mysql server
+
+
+sudo systemctl restart mysql 
+
+(this either you have mysql or mariadb will work )
+
+
+check the firewall !

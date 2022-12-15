@@ -1,0 +1,17 @@
+An r-squared value is between zero and one and indicates the
+percentage of the variation that is explained by the independent variable.
+
+To find r-squared, we use the regr_r2(Y, X) function in SQL.
+
+SELECT round(
+regr_r2(median_hh_income, pct_bachelors_higher)::numeric, 3
+) AS r_squared
+FROM acs_2011_2015_stats;
+
+The r-squared value of 0.465 indicates that about 47 percent of the
+variation in median household income in a county can be explained by
+the percentage of people with a bachelor’s degree or higher in that
+county. What explains the other 53 percent of the variation in household
+income? Any number of factors could explain the rest of the variation,
+and statisticians will typically test numerous combinations of variables to
+determine what they are.
