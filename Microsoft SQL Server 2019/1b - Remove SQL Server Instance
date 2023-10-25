@@ -7,3 +7,11 @@ this could be helpful when you have more than 2 instances runngin and you want o
 
 Remember the vesion of the sql server may be lower than the one stated. 
 Anyways the Wizard will be able to unistall any instance 
+
+
+
+REMEMBER:
+The Sql Studio Managemetn software (at the moemnt the version v. 19) is installaed separately from the server that is the egnine
+
+
+to downloiad the engine you need to search: SQL Server Developer Edition (at the moment the verison is the 2022)
