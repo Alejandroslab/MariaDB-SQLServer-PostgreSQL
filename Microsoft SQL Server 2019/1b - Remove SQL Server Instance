@@ -4,3 +4,6 @@ click on unistall
 then the Microsoft Wizard will appear and will guide you to unistall the instance
 
 this could be helpful when you have more than 2 instances runngin and you want one to be deleted 
+
+Remember the vesion of the sql server may be lower than the one stated. 
+Anyways the Wizard will be able to unistall any instance 
