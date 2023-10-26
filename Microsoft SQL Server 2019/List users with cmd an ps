@@ -1,0 +1,7 @@
+In CMD:
+
+net user
+
+In Powershell:
+
+get-localuser
